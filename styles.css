@@ -42,7 +42,7 @@ h1 {
 
 }
 
-body{
+.body-main{
     background: url("src/drawable/image-background.png");
     margin-left: 2%;
     margin-right: 2%;
@@ -57,10 +57,52 @@ body{
     width: 10%;
 }
 
-
-
 @media (min-width: 0px) and (max-width: 1566.98px) { 
     .list {
         grid-gap: 20px;
     }
  }
+
+ .li-tochka>li{
+    font-size: 50px;
+ }
+ .li-tochka>li::before{
+    font-size: 50px;
+    content: "• "; 
+ }
+
+ .button-tick{
+    background-color: brown;
+    padding: 20px;
+    font-size: 50px;
+    border-radius: 20px;
+    color: azure;
+ } 
+ 
+ .button-tick:hover{
+    background-color: rgb(124, 42, 165)
+ }
+
+ .button-tick:active{
+    background-color: blue;
+    content: "Вы нажали";
+ }
+
+ .button-tick:default {
+    background-color: brown;
+    content: "Вы нажали";
+ }
+
+.ul-main-menu{
+    display: flex;
+    flex-direction: row;  
+}
+
+.ul-main-menu>li{
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border: 1px;
+    background-color: aquamarine;
+}
